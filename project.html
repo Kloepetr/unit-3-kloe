@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kloe Project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+        background-color: rgb(69, 127, 175); 
+        margin: 0; 
+        padding: 0; 
+      }
+
+    .castle_pic {
+      right: 250px;
+    }
+
+    /*the "scenes"*/
+    .intro {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 70px;
+      color: rgb(216, 176, 100);
+      padding: 30px;
+      background-color: rgb(60, 83, 102);
+      margin-left: 350px;
+      margin-right: 350px;
+    }
+
+    .option-one,
+    .option-two {
+      background-color: green;
+      color: rgb(223, 20, 20);
+      border-color: aliceblue;
+      margin-right: 10px;
+    }
+
+    .castle {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      /* You can adjust the width as needed */
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .title {
+        color: black;
+    }
+
+    button{
+        margin: 10px;
+        height: 40px;
+        color: rgb(216, 176, 100);
+        font-weight: bold;
+        background-color: rgb(60, 83, 102);
+    }
+
+
+    .second{
+        margin: 10px;
+        color:rgb(154, 212, 60);
+    }
+  </style>
+</head>
+
+<body>
+    
+  <div class="title">The Great Gatbsy</div>
+  <div class="story-opening">
+    <h3 class="intro">Your neighbor, Leo, is known for his wealth and generosity. You are invited to his party tomorrow. Will you attend?</h3>
+    <div class="buttons">
+      <button class="yesToParty">Yes, I will go.</button>
+      <button class="noToParty">I don't really feel like going</button>
+    </div>
+    <img class="castle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Panor%C3%A1mica_Oto%C3%B1o_Alc%C3%A1zar_de_Segovia.jpg/2560px-Panor%C3%A1mica_Oto%C3%B1o_Alc%C3%A1zar_de_Segovia.jpg">
+  </div>
+
+  <div class="yes-section hidden">
+    <h3 class="second">What will you wear to the party? Casual or formal?</h3>
+    <br>
+    <h4>Will you...</h4>
+    <button class="casual">Casual</button>
+    <button class="formal">Formal</button>
+    <img src="https://d35mbwdnoe7hvk.cloudfront.net/wp-content/uploads/2022/03/Custom-Closet-Hallway-Grey-Matte-Finish-California-Closets.jpg" style="display: block; margin: 0 auto; width: 50%;">
+
+  </div>
+
+  <div class="casual-section hidden">
+    <h3>He noticed your friend </h3>
+    <br>
+    <div class="buttons">
+      <button class="goHome">I will go home then</button>
+      <button class="spillWine">I will spill wine on my friend's shirt to get attention</button>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlXqy2vKArwtede_8tSPy2M2JuoewME6sWg&s" 
+    style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+  
+  <div class="formal-section hidden">
+    <h3>You looked stunning, and the man noticed you. He wants to invite you to a dance. Will you go?</h3>
+    <br>
+    <div class="buttons">
+        <button class="yesDance">Yes, I will dance with him</button>
+        <button class="noDance">No, I will go home</button>
+    </div>
+    <img src="https://www.mychicdress.com/cdn/shop/products/LongMermaidPurpleLacePromDressesLavenderStraplessFormalDress_1.png?v=1675061903" style="display: block; margin: 0 auto; width: 50%;">
+
+  </div>
+
+  <div class="yesDance-section hidden">
+    <h3>This is actually your old love. He wants to marry you.</h3>
+    <br>
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/leonardo-dicaprio-great-gatsby-canvas-print-huy-hoang.jpg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="noDance-section hidden">
+    <h3>He married your friend instead.</h3>
+    <br>
+    <img src="https://pagesix.com/wp-content/uploads/sites/3/2017/09/leo2.jpg?resize=1536,1025&quality=75&strip=all" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="no-section hidden">
+    <h3>What do you want to do at home?</h3>
+    <br>
+    <img src="https://images.pexels.com/photos/1280162/pexels-photo-1280162.jpeg?auto=compress&cs=tinysrgb&w=800" style="display: block; margin: 0 auto; width: 50%;">
+    <div class="buttons">
+      <button class="dance">Dance</button>
+      <button class="watchNetflix">Watch Netflix</button>
+    </div>
+  </div>
+
+  <div class="dance-section hidden">
+    <h3>You learned tiktok dances and sprained your ankle while trying to hit the woah. You are now paralyzed. </h3>
+    <br>
+    <img src="https://as2.ftcdn.net/v2/jpg/03/54/93/41/1000_F_354934190_WnQjJ27jHek1TVxSTvQJpzujxiI0q3WD.jpg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="netflix-section hidden">
+    <h3>You watched netflix until midnight and fell asleep, it was just another ordinary day.</h3>
+    <br>
+    <img src="https://help.nflxext.com/43e0db2f-fea0-4308-bfb9-09f2a88f6ee4_what_is_netflix_1_en.png" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+  <div class="yesDance-section hidden">
+    <h3>This is actually your old love. He wants to marry you.</h3>
+    <br>
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/leonardo-dicaprio-great-gatsby-canvas-print-huy-hoang.jpg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="noDance-section hidden">
+    <h3>He married your friend instead.</h3>
+    <br>
+    <img src="https://pagesix.com/wp-content/uploads/sites/3/2017/09/leo2.jpg?resize=1536,1025&quality=75&strip=all" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="no-section hidden">
+    <h3>What do you want to do at home?</h3>
+    <br>
+    <img src="https://images.pexels.com/photos/1280162/pexels-photo-1280162.jpeg?auto=compress&cs=tinysrgb&w=800" style="display: block; margin: 0 auto; width: 50%;">
+    <div class="buttons">
+      <button class="dance">Dance</button>
+      <button class="watchNetflix">Watch Netflix</button>
+    </div>
+  </div>
+
+  <div class="goHome-section hidden">
+    <h3>You're leaving the party and suddenly hear a noise in the forest. You passed out and never woke up again</h3>
+        <img src="https://publicinterestnetwork.org/wp-content/uploads/2023/05/Flat-Country-credit-Cascadia-Wildlands-DSC_4323-1000x665.jpeg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="spillWine-section hidden">
+    <h3>Your neighbor got furious at you and kicked you out.</h3>
+    <br>
+    <img src="https://media.gq.com/photos/566c3affc0f741b430e646c2/16:9/w_1600,c_limit/Leonardo-Dicaprio-Everything-Oscar.jpg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="dance-section hidden">
+    <h3>You learned TikTok dances and sprained your ankle while trying to hit the woah. You are now paralyzed.</h3>
+    <br>
+    <img src="https://as2.ftcdn.net/v2/jpg/03/54/93/41/1000_F_354934190_WnQjJ27jHek1TVxSTvQJpzujxiI0q3WD.jpg" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <div class="netflix-section hidden">
+    <h3>You watched Netflix until midnight and fell asleep. It was just another ordinary day.</h3>
+    <br>
+    <img src="https://help.nflxext.com/43e0db2f-fea0-4308-bfb9-09f2a88f6ee4_what_is_netflix_1_en.png" style="display: block; margin: 0 auto; width: 50%;">
+  </div>
+
+  <script>
+    document.querySelector('.yesToParty').addEventListener('click', function() {
+      document.querySelector('.story-opening').classList.add('hidden');
+      document.querySelector('.yes-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.noToParty').addEventListener('click', function() {
+      document.querySelector('.story-opening').classList.add('hidden');
+      document.querySelector('.no-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.casual').addEventListener('click', function() {
+      document.querySelector('.yes-section').classList.add('hidden');
+      document.querySelector('.casual-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.formal').addEventListener('click', function() {
+      document.querySelector('.yes-section').classList.add('hidden');
+      document.querySelector('.formal-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.goHome').addEventListener('click', function() {
+      document.querySelector('.casual-section').classList.add('hidden');
+      document.querySelector('.goHome-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.spillWine').addEventListener('click', function() {
+      document.querySelector('.casual-section').classList.add('hidden');
+      document.querySelector('.spillWine-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.yesDance').addEventListener('click', function() {
+      document.querySelector('.formal-section').classList.add('hidden');
+      document.querySelector('.yesDance-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.noDance').addEventListener('click', function() {
+      document.querySelector('.formal-section').classList.add('hidden');
+      document.querySelector('.noDance-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.dance').addEventListener('click', function() {
+      document.querySelector('.no-section').classList.add('hidden');
+      document.querySelector('.dance-section').classList.remove('hidden');
+    });
+
+    document.querySelector('.watchNetflix').addEventListener('click', function() {
+      document.querySelector('.no-section').classList.add('hidden');
+      document.querySelector('.netflix-section').classList.remove('hidden');
+    });
+  </script>
+</body>
+
+</html>
